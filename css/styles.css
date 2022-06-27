@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+
+header h1 {
+    font-family:sans-serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+p { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1rem; 
+    letter-spacing: 1px;
+    line-height: 1.5rem; 
+    overflow: hidden;
+   white-space: normal;
+  }
+
+
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  
+
+
+body {
+  background-color: #333;
+  color: antiquewhite;
+  
+  }
+
+
+main section h2 {
+  text-align: center;
+  overflow: hidden;
+  
+  }
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.banner {
+  padding: 20px;
+}
+
+.banner img {
+width: 100%;
+}
+
+.bannertext {
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+ 
+}
+
+/* Pantallas 1024px */
+
+@media (min-width: 1024px){
+
+
+header h1 {
+  font-family:sans-serif;
+  font-size: 3rem;
+  text-align: left;
+  padding: 5px;
+}
+
+header h6 {
+  padding: 5px;
+  position: relative; left: 300px;
+}
+
+
+
+
+main {
+  display: grid;
+  grid-template-columns: 88% 12%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "banner aside"
+  "banner aside"
+  ;
+  
+}
+
+.imgbanner {
+width: 50%;
+float: left;
+}
+
+
+
+
+aside {
+  padding-left: 10px;
+  margin-left: 5px;
+  grid-area: aside;
+  background-color: white;
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+.searchbar {
+  margin: 0px;
+}
+
+
+}
